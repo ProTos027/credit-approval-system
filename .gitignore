@@ -1,0 +1,41 @@
+# --- Environment ---
+# Ignore the .env file to keep secrets like database passwords out of Git.
+# This is the most important rule in this file.
+.env
+
+# --- Python ---
+# Ignore Python's compiled bytecode and cache folders.
+__pycache__/
+*.pyc
+
+# Ignore virtual environment folders.
+venv/
+env/
+
+# --- Django ---
+# Ignore the local SQLite database file if one is ever created for testing.
+db.sqlite3
+*.sqlite3
+
+# --- Data Files ---
+# In a real project, you typically don't commit large data files.
+# The user should be instructed to provide their own.
+*.xlsx
+
+# --- Docker ---
+# Ignore Docker build context files
+.dockerignore
+
+# --- IDE / Editor ---
+# Ignore Visual Studio Code specific files.
+.vscode/
+
+# Ignore PyCharm specific files.
+.idea/
+
+# --- Operating System ---
+# Ignore Mac OS system files
+.DS_Store
+
+# Ignore Windows thumbnail cache
+Thumbs.db
